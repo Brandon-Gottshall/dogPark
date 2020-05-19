@@ -2,53 +2,93 @@
 
 ------
 
-<p style='text-align:center'><i>What's up dawg?</i></p>
-  - [Overview](#Overview)
-    - [Abstract](#abstract)
-    - [Our Team](#our team)
-  - [User Experience](#user-experience)
-    - [Problem Statment](#problem-statment)
-    - [Intro of Team Members](#team-members)
-    - [Tools Used](#tools-used)
-    - [Task Flow](#task-flow)
-    - [Journey Map](#journey-map)
-    - [Personas](#personas)
-    - [Wireframes](#wireframes)
-  - [Server Development](#server-development)
-      - [Team Member Intro](#server-dev)
-      - [Libraries](#server-libraries)
-    - [Minimum Viable Product](#mvp-server)
-      - [ERD Model](#erd-model)
-      - [Endpoints](#endpoints)
-    - [Post Minimum Viable Product](#pmvp-server)
-    - [Code Showcase](#code-showcase)
-      - [Issues and Resolutions](#issues-resolutions)
-  - [Client Development](#client-development)
-      - [Team Member Intro](#client-dev)
-      - [Libraries](#client-libraries)
-    - [Minimum Viable Product](#mvp-server)
-      - [ERD Model](#erd-model)
-      - [Endpoints](#endpoints)
-    - [Post Minimum Viable Product](#pmvp-server)
-    - [Component Hierarchy](#component-hierarchy)
-    - [Component Breakdown](#component-breakdown)
-    - [Code Showcase](#code-showcase)
-      - [Issues and Resolutions](#issues-resolutions)
+
+
+<p style='text-align:center'><i>What's up, dog?</i></p>
+
+
+
+<h4 style='text-align:center'>Table Of Contents</h4>
+
+<details style='text-align:center'>
+  <summary><a href='#overview'>Overview</a></summary>
+  <ul style='text-align:center;list-style:inside'>
+    <li><a href='#abstract'>Abstract</a></li>
+    <li><a href='#our-team'>Our Team</a></li>
+	</ul>
+</details
+
+<details style='text-align:center'>
+  <summary><a href='#user-experience'>User Experience</a></summary>
+  <ul style='text-align:center;list-style:inside'>
+    <li><a href='#problem-statment'>Problem Statment</a></li>
+    <li><a href='#ux-team'>Our User Experience Designers</a></li>
+    <li><a href='#tools-used'>Tools Used</a></li>
+    <li><a href='#task-flow'>Task Flow</a></li>
+    <li><a href='#journey-map'>Journey Map</a></li>
+    <li><a href='#personas'>Personas</a></li>
+    <li><a href='#wireframes'>Wireframes</a></li>
+	</ul>
+</details>
+
+<details style='text-align:center'>
+  <summary><a href='#server-development'>Server Development</a></summary>
+  <ul style='text-align:center;list-style:inside'>
+    <li><a href='#server-dev'>Our Server Dev</a></li>
+    <li><a href='#server-libraries'>Libraries</a></li>
+    <li><a href='#mvp-server'>Minimum Viable Product</a></li>
+    <li><a href='#erd-model'>ERD Model</a></li>
+    <li><a href='#endpoints'>Endpoints</a></li>
+    <li><a href='#mvp-server'>Minimum Viable Product</a></li>
+    <li><a href='#pmvp-server'>Post Minimum Viable Product</a></li>
+    <li><a href='#code-showcase'>Code Showcase</a></li>
+    <li><a href='#issues-resolutions'>Issues and Resolutions</a></li>
+	</ul>
+</details>
+
+<details style='text-align:center'>
+  <summary><a href='#client-development'>Client Development</a></summary>
+  <ul style='text-align:center;list-style:inside'>
+    <li><a href='#client-dev'>Our Client Dev</a></li>
+    <li><a href='#server-libraries'>Libraries</a></li>
+    <li><a href='#mvp-client'>Minimum Viable Product</a></li>
+    <li><a href='#component-hierarchy'>Component Hierarchy</a></li>
+    <li><a href='#component-breakdown'>Component Breakdown</a></li>
+    <li><a href='#mvp-client'>Minimum Viable Product</a></li>
+    <li><a href='#pmvp-client'>Post Minimum Viable Product</a></li>
+    <li><a href='#code-showcase'>Code Showcase</a></li>
+    <li><a href='#issues-resolutions'>Issues and Resolutions</a></li>
+	</ul>
+</details>
 
 
 
 
+<h2 id='#overview' style='text-align:center;'>Overview</h2>
 
 
-## Overview
 
 <h5 style='text-align:center'>Abstract</h5>
 
-​	
+
+
+<p style='text-align:center;font-style:italic'><strong style='font-size:1.1em'>dogPark</strong> is <strong style='font-size:1.1em'>your next tool</strong> for workforce management.</p>
+
+<p style='text-align:center;font-style:italic;font-size:1.3em'>We want to be your last.</p>
+
+
+
+<div style='text-align:center'><button style='color:#4CAF50;background-color:White;border:none;text-decoration:none'>Come take a walk in the dog park.</button></div>
+
+
 
 
 
 <h5 style='text-align:center'>Our Team</h5>
+
+
+
+
 
 <div style="display: grid; grid-template-columns: 45vw 45vw; grid-template-rows: 65vh 65vh; justify-content: space-evenly; align-items: space-evenly;">
   <div style='display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; margin-bottom: 50px; height: 200px'>
@@ -87,43 +127,22 @@
   </div></div>
 
 
-
-## MVP
+<h3 style='text-align: center'>Minimum Viable Product</h3>
 
 
 _Our *MVP* statment_
 
-### MVP Goals
-
-<div style="display: grid; grid-template-columns: 33% 33% 33%; grid-template-rows: 100%">
-  <div>
-      <h4>UX</h4>
-    	<ul>
-      	<li>goals here</li>
-    	</ul>
-  </div>
-  <div>
-      <h4>Client</h4>
-    	<ul>
-      	<li>goals here</li>
-    	</ul>
-  </div>
-  <div>
-      <h4>Server</h4>
-    	<ul>
-      	<li>goals here</li>
-    	</ul>
-  </div>
-</div>
+<ul><li>Our MVP Goals</ul>
 
 
 
 
-### MVP Libraries
 
 
 
-<h4 style='text-align: center'>Client</h4>
+
+
+<h4 style='text-align: center'>Client Libraries</h4>
 
 
 | Library |      Description       |
@@ -132,7 +151,7 @@ _Our *MVP* statment_
 
 
 
-<h4 style='text-align: center'>Server</h4>
+<h4 style='text-align: center'>Server Libraries</h4>
 
 | Library | Description |
 | ------- | :---------: |
@@ -172,134 +191,35 @@ Com
 
 #### ERD Model
 
-<img src="https://i.ibb.co/Pgd8hrv/Untitled-Diagram-2.jpg" alt="Untitled-Diagram-2" border="0">
+
 
 #### Endpoints
 
-> Use this section to list a selection of your intended endpoints and their uses. Please list any and all custom-created endpoints.
-
 _MVP_
 
-| Controller | Operation | VERB   | Route                           |
-| ---------- | --------- | ------ | ------------------------------- |
-| User       | #view     | GET    | /user/:id                       |
-| User       | #create   | POST   | /user                           |
-| User       | #update   | PUT    | /user/:id                       |
-| User       | #delete   | DELETE | /user/:id                       |
-| Cohort     | #index    | GET    | /cohorts                        |
-| Cohort     | #view     | GET    | /cohorts/:id                    |
-| Cohort     | #create   | POST   | /cohorts                        |
-| Cohort     | #update   | PUT    | /cohorts/:id                    |
-| Cohort     | #delete   | DELETE | /cohorts/:id                    |
-| Unit       | #index    | GET    | /units                          |
-| Unit       | #view     | GET    | /units/:id                      |
-| Unit       | #create   | POST   | /units                          |
-| Unit       | #update   | PUT    | /units/:id                      |
-| Unit       | #delete   | DELETE | /units/:id                      |
-| Category   | #index    | GET    | /category                       |
-| Category   | #view     | GET    | /category/:id                   |
-| Category   | #create   | POST   | /category                       |
-| Category   | #update   | PUT    | /category/:id                   |
-| Category   | #delete   | DELETE | /category/:id                   |
-| Question   | #index    | GET    | /question                       |
-| Question   | #view     | GET    | /question/catsearch/:categoryId |
-| Question   | #view     | GET    | /question/:id                   |
-| Question   | #create   | POST   | /question                       |
-| Question   | #update   | PUT    | /question/:id                   |
-| Question   | #delete   | DELETE | /question/:id                   |
+| Controller | Operation | VERB | Route     |
+| ---------- | --------- | ---- | --------- |
+| User       | #view     | GET  | /user/:id |
 
 _PMVP_
 
-| Controller      | Operation | VERB   | Route                                           |
-| --------------- | --------- | ------ | ----------------------------------------------- |
-| CorrectQuestion | #index    | GET    | /user/:id/CorrectQuestion/                      |
-| CorrectQuestion | #view     | GET    | /user/:id/CorrectQuestion/catsearch/:categoryId |
-| CorrectQuestion | #view     | GET    | /user/:id/CorrectQuestion/:id                   |
-| CorrectQuestion | #create   | POST   | /user/:id/CorrectQuestion/                      |
-| CorrectQuestion | #delete   | DELETE | /user/:id/CorrectQuestion/                      |
+| Controller      | Operation | VERB | Route                      |
+| --------------- | --------- | ---- | -------------------------- |
+| CorrectQuestion | #index    | GET  | /user/:id/CorrectQuestion/ |
 
-<br>
 
-***
 
-## Planning
 
-<br>
-
-### Timeframes
-
-| Task                        | Priority     | Estimated Time     | Actual Time   |
-| --------------------------- | ------------ | ------------------ | ------------- |
-| Build Endpoints             | High         | 7 hrs              | 3 hrs         |
-| Create seed data            | High         | 3 hrs              | 1 hr          |
-| Authentication              | High         | 7 hrs              | 2 hr          |
-| SignUp--frontEnd            | High         | 2.5 hrs            |               |
-| SignIn--frontEnd            | High         | 2.5 hrs            |               |
-| User Home                   | High         | 2 hr               |               |
-| CategorySelector            | High         | 5 hr               |               |
-| Game Logic                  | High         | 5 hr               |               |
-| Game Screens                | High         | 3 hrs              |               |
-| User Settings               | Medium       | 3 hrs              |               |
-| -------MVP COMPLETE-------- | ----HIGH---- | -----36 hrs------  | ------------- |
-| Instructor Home             | low          | 2 hr               |               |
-| Instructor Managment Menu   | low          | 3 hr               |               |
-| Manage Categories           | low          | 3 hrs              |               |
-| Manage Questions            | low          | 3 hrs              |               |
-| Manage Cohorts              | low          | 3 hrs              |               |
-| Access Panel                | low          | 3 hrs              |               |
-| -------PMVP COMPLETE------- | ----low----- | ------17 hrs------ | ------------- |
-| --------Total Time--------- | ------------ | -----53 hrs-----   | ------------- |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
-
-<br>
 
 ### Scheduled
 
-| Day      | Deliverables                                 |
-| -------- | -------------------------------------------- |
-| Mar 4th  | Prototyping                                  |
-| Mar 5th  | Compile Pitch                                |
-| Mar 6th  | Endpoints/Seed Data                          |
-| Mar 7th  | Seed Data                                    |
-| Mar 8th  | Auth                                         |
-| Mar 9th  | SignUp&In/UserHome                           |
-| Mar 10th | CategorySelector/Game Logic                  |
-| Mar 11th | Game Screens and User Settings---MVP         |
-| Mar 12th | Styling/Instructor Home and Managmement Menu |
-| Mar 13th | Presentations                                |
-
-<br>
+| Day     | Deliverables |
+| ------- | ------------ |
+| Mar 4th | Prototyping  |
 
 ***
 
 ## Post-MVP
-
--_User Stats_
-
-- 	_Based on table of correct questions and numbers of existing questions._
-
-
--_Instructor Managment of cohorts, categories, and questions._
-
-_Cohorts_
-
-- _Cohorts should be in flatlist. Swiping on cohort yields options to edit or delete._
- - _Circle with Plus icon on bottom right to add a cohort._
- - _The user should be prompted to enter their password if they chose the delete option._
- - _The user should be able to view a sub-flatlist with the members listed._
-
-_Categories and Questions_
-
-- _Categories And Questions managment should be in a flatlist as well._
- - _Categories would be similar to implementation of Cohorts._
- - _Tapping the add icon the user would see preconstructed choices as well as the option for custom entry._
-   -_Clicking on a category would lead to a nested sub-flatlist showing the Categories' Questions._
-
--_VS game mode for users to play with other users._
-
-- _Create a game mode selection screen_
-  <br>
 
 ***
 
