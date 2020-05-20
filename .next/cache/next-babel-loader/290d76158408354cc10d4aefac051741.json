@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default function SearchBox() {}","map":{"version":3,"sources":["/Users/brandongottshall/GDrive/dogPark/components/SearchBox.jsx"],"names":["SearchBox"],"mappings":"AAAA,eAAe,SAASA,SAAT,GAAqB,CAEnC","sourcesContent":["export default function SearchBox() {\n    \n}\n"]},"metadata":{},"sourceType":"module"}

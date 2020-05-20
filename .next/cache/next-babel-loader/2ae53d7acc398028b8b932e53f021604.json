@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default function CenterPane() {}","map":{"version":3,"sources":["/Users/brandongottshall/GDrive/dogPark/components/CenterPane.jsx"],"names":["CenterPane"],"mappings":"AAAA,eAAe,SAASA,UAAT,GAAsB,CAEpC","sourcesContent":["export default function CenterPane() {\n    \n}\n"]},"metadata":{},"sourceType":"module"}

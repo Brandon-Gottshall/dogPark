@@ -1,6 +1,10 @@
+import '../styles/tailwind.css'
+import SideNav from '../components/SideNav'
+import CenterPane from '../components/CenterPane'
 export default () => (
-  <div className="p-4 shadow rounded bg-white">
-    <h1 className="text-purple-500 leading-normal">Next.js</h1>
-    <p className="text-gray-500">with Tailwind CSS</p>
+  <div className="grid grid-cols-home grid-rows-1 h-screen">
+    <SideNav />
+    <CenterPane />
+    <div className='border border-c1'></div>
   </div>
 )

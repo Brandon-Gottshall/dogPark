@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default function SideNav() {}","map":{"version":3,"sources":["/Users/brandongottshall/GDrive/dogPark/components/SideNav.jsx"],"names":["SideNav"],"mappings":"AAAA,eAAe,SAASA,OAAT,GAAoB,CAElC","sourcesContent":["export default function SideNav () {\n\n}\n"]},"metadata":{},"sourceType":"module"}
