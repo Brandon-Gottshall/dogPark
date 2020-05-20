@@ -1,27 +1,51 @@
 import '../styles/tailwind.css'
-export const centered = 'text-center'
+import TwoByTwo from '../components/shared/TwoByTwo'
+export const shortStyle = {
+    // <details className={shortStyle.detail}>
+    titleAndNav:'grid grid-cols-3 grid-rows-1',
+    back: '',
+    detail: 'text-left pl-64 ml-64',
+    list: 'text-center list-inside',
+    pBold: 'text-center font-bold',
+    pItalic: 'text-center italic',
+    button: 'text-green-400 bg-white border border-white no-underline',
+    strong: 'text-lg',
+    twoByTwo: 'grid grid-cols-2 grid-rows-2 h-full',
+    twoByOne: 'grid grid-cols-2 grid-rows-2',
+    profile: 'flex flex-col justify-start items-center text-centered mb-12 w-full h-500px', //h48<height-stops>h64
+    soloProfile: 'flex flex-col justify-start items-center text-centered mb-12 h-auto w-',
+    profileImage: 'h-48 w-48 rounded-full m-8',
+    profileLink: 'text-base mt-20',
+    profileLink2: 'text-base',
+    profileP:'text-xs w-40',
+    italic: 'text-left text-xs'
+}
 
-<h1 className={centered}>dogPark</h1>
+<div classname={shortStyle.titleAndNav}>
+    <button className={shortStyle.back}>Back<button/>
+    <h1 className='text-center text-6xl'>dogPark</h1>
+    <div></div>
+</div>
 
 ------
 
 
 
-<p className='text-center'><i>What's up, dog?</i></p>
+<p className='text-center m-10 text-2xl'><i>What's up, dog?</i></p>
 
 
 
-<h4 className='text-center'>Table Of Contents</h4>
+<h4 className='text-center text-xl mb-8'>Table Of Contents</h4>
 
-<details className='text-center'>
+<details className={shortStyle.detail}>
     <summary><a href='#overview'>Overview</a></summary>
-    <ul style={{textAlign:'center',listStyle:'inside'}}>
+    <ul className={shortStyle.list}>
         <li><a href='#our-team'>Our Team</a></li>
     </ul>
 </details>
-<details className='text-center'>
+<details className={shortStyle.detail}>
   <summary><a href='#user-experience'>User Experience</a></summary>
-  <ul style={{textAlign:'center',listStyle:'inside'}}>
+  <ul className={shortStyle.list}>
     <li><a href='#problem-statment'>Problem Statment</a></li>
     <li><a href='#ux-team'>Our User Experience Designers</a></li>
     <li><a href='#tools-used'>Tools Used</a></li>
@@ -32,9 +56,9 @@ export const centered = 'text-center'
 	</ul>
 </details>
 
-<details className='text-center'>
+<details className={shortStyle.detail}>
   <summary><a href='#server-development'>Server Development</a></summary>
-  <ul style={{textAlign:'center',listStyle:'inside'}}>
+  <ul className={shortStyle.list}>
     <li><a href='#server-dev'>Our Server Dev</a></li>
     <li><a href='#server-libraries'>Libraries</a></li>
     <li><a href='#mvp-server'>Minimum Viable Product</a></li>
@@ -47,9 +71,9 @@ export const centered = 'text-center'
 	</ul>
 </details>
 
-<details className='text-center'>
+<details className={shortStyle.detail}>
   <summary><a href='#client-development'>Client Development</a></summary>
-  <ul style={{textAlign:'center',listStyle:'inside'}}>
+  <ul className={shortStyle.list}>
     <li><a href='#client-dev'>Our Client Dev</a></li>
     <li><a href='#server-libraries'>Libraries</a></li>
     <li><a href='#mvp-client'>Minimum Viable Product</a></li>
@@ -65,58 +89,22 @@ export const centered = 'text-center'
 
 
 
-<h2 id='#overview' className='text-center'>Overview</h2>
 
 
-
-<p style={{textlAign:'center',fontStyle:'italic'}}><strong style={{fontSize:'1.1em'}}>dogPark</strong> is <strong style={{fontSize:'1.1em'}}>your next tool</strong> for workforce management.</p>
-
-<div className='text-center'><button style={{color:'#4CAF50',backgroundColor:'White',border:'.02em solid rgba(0,0,0,.2)',textDecoration:'none'}}>Come take a walk in the dog park.</button></div>
-
-
-
-
-
-<h5 className='text-center'>Our Team</h5>
-
-
-
-<div style={{display: 'grid', gridTemplateColumns: '45vw 45vw', gridTemplateRows: '65vh 65vh', justifyContent: 'space-evenly', alignItems: 'space-evenly'}}>
-    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', textAlign: 'center', marginBottom: '50px', height: '200px'}}>
-        <h3>Mary Mac Murray</h3>
-        <i style={{textAlign:'left', fontSize: '.6em'}}>Technical Project Manager | Software Engineer | EdTech Organizer</i>
-        <img src='https://media-exp1.licdn.com/dms/image/C4D03AQH_Vqb6B7PDfA/profile-displayphoto-shrink_800_800/0?e=1595462400&v=beta&t=3-lI5VNcRSHydf_Cr66WZiUF3fiMS0gHunpKdk8zrdI' alt='Mary Mac Murray' style={{height: '275px', width: '275px', borderRadius:'100%',margin:'30px'}}/>
-        <p style={{fontSize:'.6em', width: '40vw'}}>As a formally trained teacher and technical project manager, I energize teams through playful and tactical experiences. Being a scuba rescue diver and tango dancer means I test for failure but love to improvise.</p>
-        <a style={{fontSize:'1em'}} href='https://www.maryxmac.com/' alt="Mary's portfolio">My Portfolio</a>
-        <a style={{fontSize:'1em'}} href='https://www.linkedin.com/in/maryxmac/' alt="Mary Mac Murray's LinkedIn">My LinkedIn</a>
-    </div>
-    <div style={{display: 'flex', flexDirection:'column', justifyContent: 'flex-start', alignItems: 'center', textAlign: 'center', marginBottom: '50px', height: '200px'}}>
-        <h3>Miykaelah (Rajmani) Sinclair</h3>
-        <i style={{textAlign:'left', fontSize: '.6em'}}>UX Designer | Product Designer | Event Designer</i>
-        <img src='https://media-exp1.licdn.com/dms/image/C5603AQGV5ISg-4gEJg/profile-displayphoto-shrink_800_800/0?e=1595462400&v=beta&t=_15ckCFlxKEeIomYgRyYPpvgNL-D0t4fR_-U6IDbqss' style={{height: '275px', width: '275px', borderRadius:'100%',margin:'30px'}} alt='Miykaelah Sinclair' />
-        <p style={{fontSize:'.6em',width:'40vw'}}>AI am a UX designer with over 10 years of experience using human centered design practices to produce, direct, and market memorable and meaningful events for audiences and participants. I bring this same
-        approach to my UX Design practice where I lead with listening, consider all the touch points and engagements of users, and deliver a delightful, intuitive, and memorable product.</p>
-        <a style={{fontSize:'1em'}} href='https://www.miykaelahsinclair.com' alt="Miykaelah's portfolio">My Portfolio</a>
-        <a style={{fontSize:'1em'}} href='https://www.linkedin.com/in/miykaelah-sinclair/' alt="Miykaelah's LinkedIn">My LinkedIn</a>
-    </div>
-    <div style={{display: 'flex', flexDirection:'column', justifyContent: 'flex-start', alignItems: 'center', textAlign: 'center', marginBottom: '50px', height: '200px'}}>
-        <h3>Brandon Gottshall</h3>
-        <i style={{textAlign:'left', fontSize: '.6em'}}>Software Engineer | Marine Corps Veteran</i>
-        <img src='https://media-exp1.licdn.com/dms/image/C4E03AQErDiTHdpTt8g/profile-displayphoto-shrink_800_800/0?e=1595462400&v=beta&t=UrTPfKAo--f-bqJ3XLdkNOf_V9ixRis1i1veE0h_Ojw' style={{height: '275px', width: '275px', borderRadius:'100%',margin:'30px'}} alt='Brandon Gottshall' />
-        <p style={{fontSize:'.6em', width: '40vw'}}>I am a highly adaptable, motivated Software Engineer. I’ve built a skill set through my time in the Marine Corps that allows me to take root in uncomfortable and difficult situations and extract success where others have accepted failure. I’m extremely passionate about the tech industry, and I’m always ready to embrace failure, growth, and to demand success.</p>
-        <a style={{fontSize:'1em'}} href='https://www.gottshall.dev' alt="Brandon's portfolio">My Portfolio</a>
-        <a style={{fontSize:'1em'}} href='https://www.linkedin.com/in/brandon-gottshall/' alt="Brandon's LinkedIn">My LinkedIn</a>
-    </div>
-    <div style={{display: 'flex', flexDirection:'column', justifyContent: 'flex-start', alignItems: 'center', textAlign: 'center', marginBottom: '50px', height: '200px'}}>
-        <h3>Heather Sterman</h3>
-        <i style={{textAlign:'left', fontSize: '.6em'}}>UX Researcher | Film & TV Librarian | Empath</i>
-        <img src='https://media-exp1.licdn.com/dms/image/C4D03AQHjEB9PwL06uA/profile-displayphoto-shrink_800_800/0?e=1595462400&v=beta&t=NtXNb-VOFRl5uC_VME_VKOvEYMMapzZWDc6LrzO_-lo' style={{height: '275px', width: '275px', borderRadius:'100%',margin:'30px'}} alt='Heather Sterman' />
-        <p style={{fontSize:'.6em', width: '40vw'}}>UX Researcher who’s a constant and curious learner.
-        Empathic Listener with 13 years of experience in Librarianship. The library is the ultimate example of user experience: The librarian or archivist is the UX Professional, the library itself is the Information Architecture, and the library patrons are the users of the product. </p>
-        <a style={{fontSize:'1em'}} href='https://www.heather-sterman.com/' alt="Heather's portfolio">My Portfolio</a>
-        <a style={{fontSize:'1em'}} href='https://www.linkedin.com/in/heathersterman/' alt="Heather's LinkedIn">My LinkedIn</a>
-    </div>
+<div className='text-center h-46 my-12'>
+    <p className={shortStyle.pItalic}><strong className={shortStyle.strong}>dogPark</strong> is <strong className={shortStyle.strong}>your next tool</strong> for workforce management.</p>
+    <button className={shortStyle.button}>Come take a walk in the dog park.</button>
 </div>
+
+
+
+
+
+<h4 className='mb-8'>Our Team</h4>
+
+
+
+<TwoByTwo />
 
 
 
@@ -138,24 +126,24 @@ export const centered = 'text-center'
 
 
 
-<div style={{display:'grid',gridTemplateColumns: '45vw 45vw', gridTemplateRows:' 30vh 30vh', justifyContent: 'space-evenly', alignItems: 'space-evenly'}}>
-    <div style={{display: 'flex', flexDirection:'column', justifyContent: 'flex-start', alignItems: 'center', textAlign: 'center', marginBottom: '50px', height: '200px'}}>
+<div className={shortStyle.twoByOne}>
+    <div className={shortStyle.profile}>
         <h6>Miykaelah (Rajmani) Sinclair</h6>
-        <i style={{textAlign:'left', fontSize: '.6em'}}>UX Designer | Product Designer | Event Designer</i>
-        <img src='https://media-exp1.licdn.com/dms/image/C5603AQGV5ISg-4gEJg/profile-displayphoto-shrink_800_800/0?e=1595462400&v=beta&t=_15ckCFlxKEeIomYgRyYPpvgNL-D0t4fR_-U6IDbqss' style={{height: '275px', width: '275px', borderRadius:'100%',margin:'30px'}} alt='Miykaelah Sinclair' />
-        <p style={{fontSize:'.6em', width: '40vw'}}>AI am a UX designer with over 10 years of experience using human centered design practices to produce, direct, and market memorable and meaningful events for audiences and participants. I bring this same
+        <i className={shortStyle.italic}>UX Designer | Product Designer | Event Designer</i>
+        <img src='https://media-exp1.licdn.com/dms/image/C5603AQGV5ISg-4gEJg/profile-displayphoto-shrink_800_800/0?e=1595462400&v=beta&t=_15ckCFlxKEeIomYgRyYPpvgNL-D0t4fR_-U6IDbqss' className={shortStyle.profileImage} alt='Miykaelah Sinclair' />
+        <p className={shortStyle.profileP}>AI am a UX designer with over 10 years of experience using human centered design practices to produce, direct, and market memorable and meaningful events for audiences and participants. I bring this same
         approach to my UX Design practice where I lead with listening, consider all the touch points and engagements of users, and deliver a delightful, intuitive, and memorable product.</p>
-        <a style={{fontSize:'1em'}} href='https://www.miykaelahsinclair.com' alt="Miykaelah's portfolio">My Portfolio</a>
-        <a style={{fontSize:'1em'}} href='https://www.linkedin.com/in/miykaelah-sinclair/' alt="Miykaelah's LinkedIn">My LinkedIn</a>
+        <a className={shortStyle.profileLink} href='https://www.miykaelahsinclair.com' alt="Miykaelah's portfolio">My Portfolio</a>
+        <a className={shortStyle.profileLink2} href='https://www.linkedin.com/in/miykaelah-sinclair/' alt="Miykaelah's LinkedIn">My LinkedIn</a>
     </div>
-    <div style={{display: 'flex', flexDirection:'column', justifyContent: 'flex-start', alignItems: 'center', textAlign: 'center', marginBottom: '50px', height: '200px'}}>
+    <div className={shortStyle.profile}>
         <h6>Heather Sterman</h6>
-        <i style={{textAlign:'left', fontSize: '.6em'}}>UX Researcher | Film & TV Librarian | Empath</i>
-        <img src='https://media-exp1.licdn.com/dms/image/C4D03AQHjEB9PwL06uA/profile-displayphoto-shrink_800_800/0?e=1595462400&v=beta&t=NtXNb-VOFRl5uC_VME_VKOvEYMMapzZWDc6LrzO_-lo' style={{height: '275px', width: '275px', borderRadius:'100%',margin:'30px'}} alt='Heather Sterman' />
-        <p style={{fontSize:'.6em', width: '40vw'}}>UX Researcher who’s a constant and curious learner.
+        <i className={shortStyle.italic}>UX Researcher | Film & TV Librarian | Empath</i>
+        <img src='https://media-exp1.licdn.com/dms/image/C4D03AQHjEB9PwL06uA/profile-displayphoto-shrink_800_800/0?e=1595462400&v=beta&t=NtXNb-VOFRl5uC_VME_VKOvEYMMapzZWDc6LrzO_-lo' className={shortStyle.profileImage} alt='Heather Sterman' />
+        <p className={shortStyle.profileP}>UX Researcher who’s a constant and curious learner.
         Empathic Listener with 13 years of experience in Librarianship. The library is the ultimate example of user experience: The librarian or archivist is the UX Professional, the library itself is the Information Architecture, and the library patrons are the users of the product. </p>
-        <a style={{fontSize:'1em'}} href='https://www.heather-sterman.com/' alt="Heather's portfolio">My Portfolio</a>
-        <a style={{fontSize:'1em'}} href='https://www.linkedin.com/in/heathersterman/' alt="Heather's LinkedIn">My LinkedIn</a>
+        <a className={shortStyle.profileLink} href='https://www.heather-sterman.com/' alt="Heather's portfolio">My Portfolio</a>
+        <a className={shortStyle.profileLink2} href='https://www.linkedin.com/in/heathersterman/' alt="Heather's LinkedIn">My LinkedIn</a>
     </div>
 </div>
 
@@ -196,13 +184,13 @@ export const centered = 'text-center'
 
 <h5 className='text-center'>Our Server Dev</h5>
 
- <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', marginBottom:'50px', height:'200px', width:'400px'}}>
+ <div className={shortStyle.soloProfile}>
     <h3>Mary Mac Murray</h3>
-    <i style={{textAlign:'left', fontSize: '.6em'}}>Technical Project Manager | Software Engineer | EdTech Organizer</i>
-    <img src='https://media-exp1.licdn.com/dms/image/C4D03AQH_Vqb6B7PDfA/profile-displayphoto-shrink_800_800/0?e=1595462400&v=beta&t=3-lI5VNcRSHydf_Cr66WZiUF3fiMS0gHunpKdk8zrdI' alt='Mary Mac Murray' style={{height: '275px', width: '275px', borderRadius:'100%',margin:'30px'}}/>
-    <p style={{fontSize:'.6em', width: '40vw'}}>As a formally trained teacher and technical project manager, I energize teams through playful and tactical experiences. Being a scuba rescue diver and tango dancer means I test for failure but love to improvise.</p>
-    <a style={{fontSize:'1em'}} href='https://www.maryxmac.com/' alt="Mary's portfolio">My Portfolio</a>
-    <a style={{fontSize:'1em'}} href='https://www.linkedin.com/in/maryxmac/' alt="Mary Mac Murray's LinkedIn">My LinkedIn</a>
+    <i className={shortStyle.italic}>Technical Project Manager | Software Engineer | EdTech Organizer</i>
+    <img src='https://media-exp1.licdn.com/dms/image/C4D03AQH_Vqb6B7PDfA/profile-displayphoto-shrink_800_800/0?e=1595462400&v=beta&t=3-lI5VNcRSHydf_Cr66WZiUF3fiMS0gHunpKdk8zrdI' alt='Mary Mac Murray' className={shortStyle.profileImage}/>
+    <p className={shortStyle.profileP}>As a formally trained teacher and technical project manager, I energize teams through playful and tactical experiences. Being a scuba rescue diver and tango dancer means I test for failure but love to improvise.</p>
+    <a className={shortStyle.profileLink} href='https://www.maryxmac.com/' alt="Mary's portfolio">My Portfolio</a>
+    <a className={shortStyle.profileLink2} href='https://www.linkedin.com/in/maryxmac/' alt="Mary Mac Murray's LinkedIn">My LinkedIn</a>
 </div>
 
 
@@ -223,14 +211,14 @@ export const centered = 'text-center'
 
 <h5 className='text-center'>Endpoints</h5>
 
-<p style={{textAlign:'center',fontWeight:'bold'}}>Minimum Viable Product</p>
+<p className={shortStyle.pBold}>Minimum Viable Product</p>
 
 | Controller | Operation | VERB | Route     |
 | ---------- | --------- | ---- | --------- |
 | User       | #view     | GET  | /user/:id |
 
 
-<p style={{textAlign:'center',fontWeight:'bold'}}>Post Minimum Viable Product</p>
+<p className={shortStyle.pBold}>Post Minimum Viable Product</p>
 
 | Controller      | Operation | VERB | Route                      |
 | --------------- | --------- | ---- | -------------------------- |
@@ -259,13 +247,13 @@ export const centered = 'text-center'
 
 <h5 className='text-center'>Our Client Dev</h5>
 
-<div style={{display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', aligItems: 'center', textAlign: 'center', marginBottom: '50px', height: '200px', width:'400px'}}>
+<div className={shortStyle.soloProfile}>
        <h3>Brandon Gottshall</h3>
-       <i style={{textAlign:'left', fontSize: '.6em'}}>Software Engineer | Marine Corps Veteran</i>
-       <img src='https://media-exp1.licdn.com/dms/image/C4E03AQErDiTHdpTt8g/profile-displayphoto-shrink_800_800/0?e=1595462400&v=beta&t=UrTPfKAo--f-bqJ3XLdkNOf_V9ixRis1i1veE0h_Ojw' style={{height: '275px', width: '275px', borderRadius:'100%',margin:'30px'}} alt='Brandon Gottshall' />
-       <p style={{fontSize:'.6em', width: '40vw'}}>I am a highly adaptable, motivated Software Engineer. I’ve built a skill set through my time in the Marine Corps that allows me to take root in uncomfortable and difficult situations and extract success where others have accepted failure. I’m extremely passionate about the tech industry, and I’m always ready to embrace failure, growth, and to demand success.</p>
-       <a style={{fontSize:'1em'}} href='https://www.gottshall.dev' alt="Brandon's portfolio">My Portfolio</a>
-       <a style={{fontSize:'1em'}} href='https://www.linkedin.com/in/brandon-gottshall/' alt="Brandon's LinkedIn">My LinkedIn</a>
+       <i className={shortStyle.italic}>Software Engineer | Marine Corps Veteran</i>
+       <img src='https://media-exp1.licdn.com/dms/image/C4E03AQErDiTHdpTt8g/profile-displayphoto-shrink_800_800/0?e=1595462400&v=beta&t=UrTPfKAo--f-bqJ3XLdkNOf_V9ixRis1i1veE0h_Ojw' className={shortStyle.profileImage} alt='Brandon Gottshall' />
+       <p className={shortStyle.profileP}>I am a highly adaptable, motivated Software Engineer. I’ve built a skill set through my time in the Marine Corps that allows me to take root in uncomfortable and difficult situations and extract success where others have accepted failure. I’m extremely passionate about the tech industry, and I’m always ready to embrace failure, growth, and to demand success.</p>
+       <a className={shortStyle.profileLink} href='https://www.gottshall.dev' alt="Brandon's portfolio">My Portfolio</a>
+       <a className={shortStyle.profileLink2} href='https://www.linkedin.com/in/brandon-gottshall/' alt="Brandon's LinkedIn">My LinkedIn</a>
 </div>
 
 <h5 className='text-center'>Libraries</h5>
@@ -284,14 +272,14 @@ export const centered = 'text-center'
 
 
 
-<p style={{textAlign:'center',fontWeight:'bold'}}>MVP</p>
+<p className={shortStyle.pBold}>MVP</p>
 
 
 | Component | State | Description              |
 | --------- | ----- | ------------------------ |
 | App       | User  | Root of the application. |
 
-<p style={{textAlign:'center',fontWeight:'bold'}}>PMVP</p>
+<p className={shortStyle.pBold}>PMVP</p>
 
 
 | Component | State    | Description                                                  |
