@@ -6,7 +6,7 @@ export default function MiniProfile({userData}) {
         city: 'New York'
     }
     return(
-        <div className="flex justify-end mt-2 w-1/3 h-12">
+        <div className="flex self-center w-1/3 h-12">
             <img className='w-12 h-12 rounded-full' src={user.avatar}/>
             <div className="grid grid-cols-1 grid-rows-3 h-10 ml-3 font-f1 text-sm w-full">
                 <p className='text-c1'>Welcome, {user.first_name}!</p>

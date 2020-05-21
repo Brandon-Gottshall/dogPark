@@ -13,7 +13,7 @@ export default function CenterPane() {
     const view = (search === '') ? <Dash search={search}/> : <Results search={search}/>
     return(
         <div className="flex flex-wrap flex-column content-start text-left h-full">
-            <div className='flex justify-between h-36 w-10/12 border border-black' >
+            <div className='flex h-36 w-full' >
                 <SearchBox setSearch={setSearch} search={search}/>
                 <MiniProfile/>
             </div>
