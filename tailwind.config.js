@@ -16,7 +16,10 @@ module.exports = {
             gridTemplateColumns: {
                 home: '250px auto',
                 mobileHome: '200px auto',
-                profile: '250px auto 250px'
+                profile: '250px auto 250px',
+            },
+            gridTemplateRows: {
+                newscard: '10% 10% 80%'
             }
         }
     },
