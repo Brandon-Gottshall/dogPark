@@ -17736,7 +17736,11 @@ video {
 }
 
 .grid-cols-home {
-  grid-template-columns: 25vw 75vw;
+  grid-template-columns: 250px auto;
+}
+
+.grid-cols-mobileHome {
+  grid-template-columns: 200px auto;
 }
 
 .grid-cols-profile {
@@ -36900,7 +36904,11 @@ SemiBoldItalic */
   }
 
   .sm\:grid-cols-home {
-    grid-template-columns: 25vw 75vw;
+    grid-template-columns: 250px auto;
+  }
+
+  .sm\:grid-cols-mobileHome {
+    grid-template-columns: 200px auto;
   }
 
   .sm\:grid-cols-profile {
@@ -56053,7 +56061,11 @@ SemiBoldItalic */
   }
 
   .md\:grid-cols-home {
-    grid-template-columns: 25vw 75vw;
+    grid-template-columns: 250px auto;
+  }
+
+  .md\:grid-cols-mobileHome {
+    grid-template-columns: 200px auto;
   }
 
   .md\:grid-cols-profile {
@@ -75206,7 +75218,11 @@ SemiBoldItalic */
   }
 
   .lg\:grid-cols-home {
-    grid-template-columns: 25vw 75vw;
+    grid-template-columns: 250px auto;
+  }
+
+  .lg\:grid-cols-mobileHome {
+    grid-template-columns: 200px auto;
   }
 
   .lg\:grid-cols-profile {
@@ -94359,7 +94375,11 @@ SemiBoldItalic */
   }
 
   .xl\:grid-cols-home {
-    grid-template-columns: 25vw 75vw;
+    grid-template-columns: 250px auto;
+  }
+
+  .xl\:grid-cols-mobileHome {
+    grid-template-columns: 200px auto;
   }
 
   .xl\:grid-cols-profile {

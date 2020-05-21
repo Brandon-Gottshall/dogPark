@@ -9,10 +9,10 @@ export default function SearchBox({search, setSearch}) {
         setSearch(tempSearch)
     }
     return(
-        <div className='flex no-wrap h-8 w-2/3 mr-56 border border-black m-5'>
+        <div className='w-48 flex no-wrap h-8 mr-56 border border-black m-5'>
             <IoIosSearch className='w-8 my-auto'/>
-                <input className='w-full h-full mx-auto outline-none' type="text" name='search' placeholder='Search Everywhere'
-                onChange={handleChange} />
+            <input className='w-full h-full outline-none' type="text" name='search' placeholder='Search Everywhere'
+            onChange={handleChange} />
         </div>
     )
 }

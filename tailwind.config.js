@@ -14,7 +14,8 @@ module.exports = {
                 f1: ['Nunito', 'sans-serif']
             },
             gridTemplateColumns: {
-                home: '25vw 75vw',
+                home: '250px auto',
+                mobileHome: '200px auto',
                 profile: '250px auto 250px'
             }
         }
