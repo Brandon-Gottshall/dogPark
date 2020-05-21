@@ -19816,6 +19816,14 @@ video {
   transition-delay: 1000ms;
 }
 
+.no-scrollbar {
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* Remaining Available Nunito Font Faces */
 
 /* ExtraLight

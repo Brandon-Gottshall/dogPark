@@ -26,6 +26,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
 /* Remaining Available Nunito Font Faces */
 
 /* ExtraLight
