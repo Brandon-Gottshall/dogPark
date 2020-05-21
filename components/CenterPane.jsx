@@ -15,7 +15,7 @@ export default function CenterPane() {
         <div className="flex flex-wrap flex-column overflow-y-scroll overflow-x-hidden content-start text-left h-full">
             <div className='grid grid-cols-2 grid-rows-1 h-36 w-full' >
                 <SearchBox setSearch={setSearch} search={search}/>
-                <MiniProfile/>
+                <MiniProfile />
             </div>
             {view}
         </div>
