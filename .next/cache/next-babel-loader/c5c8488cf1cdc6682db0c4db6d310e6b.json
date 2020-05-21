@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default function Feed() {}","map":{"version":3,"sources":["/Users/brandongottshall/GDrive/dogPark/components/shared/Feed.jsx"],"names":["Feed"],"mappings":"AAAA,eAAe,SAASA,IAAT,GAAgB,CAE9B","sourcesContent":["export default function Feed() {\n    \n}\n"]},"metadata":{},"sourceType":"module"}
