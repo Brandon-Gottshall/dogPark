@@ -14,7 +14,7 @@ export default function Users({usersData}) {
         const Card = ({user, id}) => {
             return (
                 <div className='w-40 pl-4 pt-4'>
-                    <img src={users[id].avatar} className='w-32 h-32 rounded-full shadow'/>
+                    <img src={users[id].avatar} className='w-32 h-32 rounded-full shadow border-2 border-c1 border-opacity-75'/>
                     <div className="text-left w-24 mx-auto leading-tight">
                         <h3 className="text-lg font-f1">{users[id].first_name+' '+users[id].last_name}</h3>
                         <p className='text-xs font-f1 font-thin'>{users[id].role}</p>
