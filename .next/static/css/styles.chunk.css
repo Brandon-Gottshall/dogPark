@@ -17939,10 +17939,6 @@ video {
   grid-template-rows: none;
 }
 
-.grid-rows-newscard {
-  grid-template-rows: 10% 10% 80%;
-}
-
 .row-auto {
   grid-row: auto;
 }
@@ -37124,10 +37120,6 @@ SemiBoldItalic */
     grid-template-rows: none;
   }
 
-  .sm\:grid-rows-newscard {
-    grid-template-rows: 10% 10% 80%;
-  }
-
   .sm\:row-auto {
     grid-row: auto;
   }
@@ -56283,10 +56275,6 @@ SemiBoldItalic */
 
   .md\:grid-rows-none {
     grid-template-rows: none;
-  }
-
-  .md\:grid-rows-newscard {
-    grid-template-rows: 10% 10% 80%;
   }
 
   .md\:row-auto {
@@ -75446,10 +75434,6 @@ SemiBoldItalic */
     grid-template-rows: none;
   }
 
-  .lg\:grid-rows-newscard {
-    grid-template-rows: 10% 10% 80%;
-  }
-
   .lg\:row-auto {
     grid-row: auto;
   }
@@ -94605,10 +94589,6 @@ SemiBoldItalic */
 
   .xl\:grid-rows-none {
     grid-template-rows: none;
-  }
-
-  .xl\:grid-rows-newscard {
-    grid-template-rows: 10% 10% 80%;
   }
 
   .xl\:row-auto {
