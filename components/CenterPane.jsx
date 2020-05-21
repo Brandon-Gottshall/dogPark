@@ -10,10 +10,10 @@ export default function CenterPane() {
         console.log(search)
         // debounce( () => console.log('triggered'), 1000)
     }, [search])
-    const view = () => (search === '') ? <Dash search={search}/> : <Results search={search}/>
+    const view = (search === '') ? <Dash search={search}/> : <Results search={search}/>
     return(
-        <div className="flex flex-wrap flex-column content-start text-left w-full h-full">
-            <div className='flex justify-between w-full h-12' >
+        <div className="flex flex-wrap flex-column content-start text-left h-full">
+            <div className='flex justify-between h-36 w-10/12 border border-black' >
                 <SearchBox setSearch={setSearch} search={search}/>
                 <MiniProfile/>
             </div>
