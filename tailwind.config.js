@@ -1,24 +1,24 @@
 module.exports = {
-  purge: [],
-  theme: {
-    fontFamily: {
-        f1: ['arial', 'sans-serif']
-    },
-    extend: {
-        colors: {
-            c1: '#280570',
-            c2: '#4F0573',
-            c3: '#A3A3A3',
-            c4: '#B799D1',
-            c5: '#5C5C5D',
-            c6: '#924FA8'
-        },
-        gridTemplateColumns: {
-            home: '25% 75%',
-            profile: '25% 37.5% 37.5%'
+    purge: [],
+    theme: {
+        extend: {
+            colors: {
+                c1: '#280570',
+                c2: '#4F0573',
+                c3: '#A3A3A3',
+                c4: '#B799D1',
+                c5: '#5C5C5D',
+                c6: '#924FA8'
+            },
+            fontFamily: {
+                f1: ['Nunito', 'sans-serif']
+            },
+            gridTemplateColumns: {
+                home: '250px auto',
+                profile: '250px auto 250px'
+            }
         }
     },
-  },
   variants: {},
   plugins: [],
 }
