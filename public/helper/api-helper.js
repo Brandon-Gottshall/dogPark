@@ -46,3 +46,8 @@ export const getMyTeamAndProjects = async () => {
   const resp = await api.get('/users/1/team');
   return resp.data;
 }
+
+export const getTeamUpdates = async () => {
+  const resp = await api.get('/updates');
+  return resp.data;
+}
