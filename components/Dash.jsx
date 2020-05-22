@@ -4,9 +4,9 @@ import { getMyTeamAndProjects} from '../public/helper/api-helper'
 import { useState, useEffect } from 'react'
 import ProjectGrid from './ProjectGrid'
 export default function Dash() {
-  
+
   const [userData, setUserData] = useState([])
-  
+
   useEffect(() => {
     const data = getMyTeamAndProjects();
     data.then((value) =>setUserData(value))
