@@ -10,7 +10,7 @@ import {
     IoLogoIonic
 } from 'react-icons/io'
 import { useState } from 'react'
-export default function ProjectSquare({data, i}) {
+export default function ProjectSquare({data, id}) {
     const iconStyle = 'w-40 h-40 text-white mt-2'
     const icons = [
         <IoIosBarcode      className={iconStyle}/>,
@@ -24,11 +24,11 @@ export default function ProjectSquare({data, i}) {
         <IoLogoIonic       className={iconStyle}/>
     ]
     const color = [ 2, 6, 4 ]
-    let square = `projectSquare flex flex-col items-center border-c${color[i%3]} bg-c${color[i%3]}`
+    let square = `projectSquare flex flex-col items-center border-c${color[id%3]} bg-c${color[id%3]}`
     return (
-        <div className={square}>
+        <div key={id} className={square}>
             <h3 className="w-full mt-4 font-f1 text-center text-white">{data.name}</h3>
-            {icons[i%8]}
+            {icons[id%8]}
             <p className="font-f1 font-thin text-sm tracking-tight self-end mr-4 mt-4 text-white text-left">MEET THE TEAM</p>
         </div>
     )
