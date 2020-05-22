@@ -17,7 +17,7 @@ export default function Users({userData}) {
         const Card = ({user, id}) => {
             return (
                 <div onClick={() => storeUserID(1)} className='w-40 pl-4 mt-4'>
-                    <img src={user.avatar} className='w-32 h-32 rounded-full shadow border-2 border-c1 border-opacity-75'/>
+                    <img src={user.avatar} className='transform hover:-translate-y-4 transition-all duration-200 ease-in-out w-32 h-32 rounded-full shadow border-2 border-c1 border-opacity-75'/>
                     <div className="text-left w-24 mx-auto leading-tight">
                         <h3 className="text-lg font-f1">{user.first_name+' '+user.last_name}</h3>
                         <p className='text-xs font-f1 font-thin'>{user.title}</p>
