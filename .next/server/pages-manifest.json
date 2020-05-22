@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"/_app":"static/development/pages/_app.js","/_document":"static/development/pages/_document.js","/_error":"static/development/pages/_error.js","/next/dist/pages/_error":"static/development/pages/next/dist/pages/_error.js","/profile/[userID]":"static/development/pages/profile/[userID].js"}
-=======
-{"/_app":"static/development/pages/_app.js","/_document":"static/development/pages/_document.js","/_error":"static/development/pages/_error.js","/index":"static/development/pages/index.js","/next/dist/pages/_error":"static/development/pages/next/dist/pages/_error.js","/":"static/development/pages/index.js"}
->>>>>>> 8b70c36b3f6ee4ab1e33e407ec52443c02352e87
+{"/_app":"static/development/pages/_app.js","/_document":"static/development/pages/_document.js","/_error":"static/development/pages/_error.js","/next/dist/pages/_error":"static/development/pages/next/dist/pages/_error.js"}
