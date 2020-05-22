@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import ProjectGrid from './ProjectGrid'
 export default function Dash() {
 
-  const [userData, setUserData] = useState([])
+  const [userData, setUserData] = useState(false)
 
   useEffect(() => {
     const data = getMyTeamAndProjects();
