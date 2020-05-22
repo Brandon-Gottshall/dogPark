@@ -6,9 +6,10 @@ export default function Profile() {
     const router = useRouter()
     const { userID } = router.query
     return(
-        <div className="grid grid-cols-mobileHome sm:grid-cols-home grid-rows-1 h-screen overflow-y-hidden">
-            <SideNav />
-            <CenterPane showProfile='true' userId={userID} />
-        </div>
+        <p>{userID}</p>
     )
 }
+{/* <div className="grid grid-cols-mobileHome sm:grid-cols-home grid-rows-1 h-screen overflow-y-hidden">
+    <SideNav />
+    <CenterPane showProfile='true' userId={userID} />
+</div> */}
