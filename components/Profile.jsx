@@ -7,7 +7,7 @@ export default function Profile() {
     return(
         <div className='w-full bg-c1'>
             <div className="grid grid-cols-2 grid-rows-2 bg-c2">
-                <h2 className="ml-4 mt-1 text-white">Abbie Roberts</h2>
+                <h2 className="ml-4 mt-1 text-white">Abbie Robarts</h2>
                 <div className='flex flex-row-reverse items-center w-full text-right'>
                      <IoIosCloseCircleOutline onClick={() => storeUserID(false)} className="w-6 h-6 mr-2 text-white"/>
                 </div>
