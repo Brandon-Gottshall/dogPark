@@ -1,6 +1,6 @@
 import StatusDot from  '../shared/StatusDot'
-export default function Users({usersData}) {
-    const users = usersData ||
+export default function Users({userData}) {
+    const users = userData ||
         Array(20).fill({
             first_name: 'First',
             last_name: 'Last',
@@ -17,7 +17,7 @@ export default function Users({usersData}) {
                     <img src={users[id].avatar} className='w-32 h-32 rounded-full shadow border-2 border-c1 border-opacity-75'/>
                     <div className="text-left w-24 mx-auto leading-tight">
                         <h3 className="text-lg font-f1">{users[id].first_name+' '+users[id].last_name}</h3>
-                        <p className='text-xs font-f1 font-thin'>{users[id].role}</p>
+                        <p className='text-xs font-f1 font-thin'>{users[id].title}</p>
                         <p className='text-xs font-f1 font-thin'>{users[id].city}</p>
                         <div className='font-thin text-xs font-c1 flex items-center'>
                             <p>Online</p>
