@@ -2,11 +2,11 @@ import Users from './shared/Users'
 import Feed from './shared/Feed'
 import { getMyTeamAndProjects} from '../public/helper/api-helper'
 import { useState, useEffect } from 'react'
-
+import ProjectGrid from './ProjectGrid'
 export default function Dash() {
-  
-  const [userData, setUserData] = useState([])
-  
+
+  const [userData, setUserData] = useState(false)
+
   useEffect(() => {
     const data = getMyTeamAndProjects();
     data.then((value) =>setUserData(value))
@@ -20,6 +20,8 @@ export default function Dash() {
             <h3 className="font-f1 text-left mt-6 ml-4 tracking-wide">Latest News</h3>
             <Feed />
 
+            <h3 className="font-f1 text-left mt-6 ml-4 tracking-wide">Project Teams</h3>
+            <ProjectGrid />
         </div>
     )
 }

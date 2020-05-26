@@ -1,5 +1,5 @@
-import { IoIosSearch } from 'react-icons/io'
 import { useState } from 'react'
+import { IoIosSearch } from 'react-icons/io'
 export default function SearchBox({search, setSearch}) {
     const [tempSearch, setTempSearch] = useState()
     const handleChange = (e) => {

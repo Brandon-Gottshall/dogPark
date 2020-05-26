@@ -3,6 +3,7 @@ import Dash from './Dash'
 import Results from './Results'
 import MiniProfile from './MiniProfile'
 import { useState, useEffect } from 'react'
+import { UserContext } from '../contexts/userContext'
 import { debounce } from 'lodash'
 export default function CenterPane() {
     const [search, setSearch] = useState('')
