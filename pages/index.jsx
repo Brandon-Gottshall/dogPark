@@ -1,6 +1,5 @@
 import { useContext } from 'react'
 import { UserContext } from '../contexts/userContext'
-import '../styles/tailwind.css'
 import SideNav from '../components/SideNav'
 import CenterPane from '../components/CenterPane'
 import Profile from '../components/Profile'
