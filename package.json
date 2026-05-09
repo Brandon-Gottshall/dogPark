@@ -45,11 +45,15 @@
     "semver": "7.7.4",
     "ssri": "6.0.2",
     "trim": "0.0.3",
-    "y18n": "4.0.1"
+    "y18n": "4.0.1",
+    "fast-uri": "3.1.2"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "serve ./out"
+  },
+  "engines": {
+    "node": ">=24 <26"
   }
 }
