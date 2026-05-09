@@ -52,5 +52,8 @@
     "dev": "next",
     "build": "next build",
     "start": "serve ./out"
+  },
+  "engines": {
+    "node": ">=24 <26"
   }
 }
