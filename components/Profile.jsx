@@ -17,7 +17,7 @@ export default function Profile() {
                 </div>
             </div>
             <div className='flex items-center justify-center bg-c2 h-40'>
-                <img src='http://www.place-puppy.com/201x201' className='w-32 h-32 mb-6 rounded-full shadow border-2 border-c1 border-opacity-75'/>
+                <img src='/images/generated/profile-project-manager.png' alt='Abbie Robarts profile avatar' className='w-32 h-32 mb-6 rounded-full shadow border-2 border-c1 border-opacity-75 object-cover'/>
             </div>
             <div className="h-full font-f1 flex flex-col items-center justify-start bg-c4">
                 <h3 className="my-2 text-sm font-semibold tracking-narrow">Project Lead | Chicago (2:30 p.m. CST)</h3>

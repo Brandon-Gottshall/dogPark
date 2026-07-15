@@ -3,21 +3,28 @@ import { UserContext } from '../../contexts/userContext'
 import { useContext } from 'react'
 export default function Users({userData}) {
     const users = userData ||
-        Array(20).fill({
-            first_name: 'First',
-            last_name: 'Last',
-            role: 'Project Lead',
-            avatar: `http://place-puppy.com/200x300`,
-            city: 'New York'
-        }
-    )
+        Array.from({ length: 20 }, (_, index) => {
+            const avatars = [
+                '/images/generated/profile-project-manager.png',
+                '/images/generated/profile-product-designer.png',
+                '/images/generated/profile-software-engineer.png',
+                '/images/generated/profile-ux-researcher.png',
+            ]
+            return {
+                first_name: 'First',
+                last_name: 'Last',
+                title: 'Project Lead',
+                avatar: avatars[index % avatars.length],
+                city: 'New York'
+            }
+        })
     const { userID, storeUserID } = useContext(UserContext)
     const CardGenerator = () => {
 
         const Card = ({user, id}) => {
             return (
                 <div onClick={() => storeUserID(1)} className='w-40 pl-4 mt-4'>
-                    <img src={user.avatar} className='transform hover:-translate-y-4 transition-all duration-200 ease-in-out w-32 h-32 rounded-full shadow border-2 border-c1 border-opacity-75'/>
+                    <img src={user.avatar} alt={`${user.first_name} ${user.last_name} profile avatar`} className='transform hover:-translate-y-4 transition-all duration-200 ease-in-out w-32 h-32 rounded-full shadow border-2 border-c1 border-opacity-75 object-cover'/>
                     <div className="text-left w-24 mx-auto leading-tight">
                         <h3 className="text-lg font-f1">{user.first_name+' '+user.last_name}</h3>
                         <p className='text-xs font-f1 font-thin'>{user.title}</p>
